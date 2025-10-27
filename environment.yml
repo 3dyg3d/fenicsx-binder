@@ -1,0 +1,10 @@
+name: fenicsx-binder
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - fenics-dolfinx
+  - jupyterlab
+  - pyvista
+  - matplotlib
+  - mpi4py
