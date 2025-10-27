@@ -3,13 +3,15 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - fenics-dolfinx >=0.10.0
+  - fenics-dolfinx=0.10.0
   - mpi4py
   - petsc
   - petsc4py
-  - ufl
-  - basix
-  - ffcx
   - pyvista
   - matplotlib
   - jupyterlab
+  - pip
+  - pip:
+      - ufl==2025.2.0
+      - basix==0.10.0
+      - ffcx==0.10.0
