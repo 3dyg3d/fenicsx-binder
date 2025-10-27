@@ -10,8 +10,3 @@ dependencies:
   - pyvista
   - matplotlib
   - jupyterlab
-  - pip
-  - pip:
-      - ufl==2025.2.0
-      - basix==0.10.0
-      - ffcx==0.10.0
