@@ -1,3 +1,3 @@
-FROM quay.io/fenicsproject/dolfinx:latest
+FROM dolfinx/dolfinx:latest
 RUN pip install --no-cache-dir jupyterlab pyvista matplotlib
 CMD ["jupyter-lab", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
