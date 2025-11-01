@@ -1,0 +1,724 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="https://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="mesh" GridType="Uniform">
+      <Topology TopologyType="Hexahedron" NumberOfElements="320" NodesPerElement="8">
+        <DataItem Dimensions="320 8" NumberType="Int" Format="HDF">results_hyperelastic.h5:/Mesh/mesh/topology</DataItem>
+      </Topology>
+      <Geometry GeometryType="XYZ">
+        <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Mesh/mesh/geometry</DataItem>
+      </Geometry>
+    </Grid>
+    <Grid Name="Displacement" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/0</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/1</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/2</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/3</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/4</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/5</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/6</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/7</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/8</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/9</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="10" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/10</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="11" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/11</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="12" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/12</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="13" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/13</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="14" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/14</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="15" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/15</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="16" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/16</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="17" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/17</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="18" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/18</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Displacement" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="19" />
+        <Attribute Name="Displacement" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="525 3" Format="HDF">results_hyperelastic.h5:/Function/Displacement/19</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Cauchy_stress_CG" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/0</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/1</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/2</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/3</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/4</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/5</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/6</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/7</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/8</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/9</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="10" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/10</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="11" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/11</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="12" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/12</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="13" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/13</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="14" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/14</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="15" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/15</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="16" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/16</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="17" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/17</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="18" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/18</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="19" />
+        <Attribute Name="Cauchy_stress_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_CG/19</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Cauchy_stress_DG" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/0</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/1</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/2</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/3</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/4</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/5</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/6</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/7</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/8</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/9</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="10" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/10</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="11" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/11</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="12" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/12</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="13" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/13</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="14" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/14</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="15" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/15</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="16" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/16</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="17" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/17</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="18" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/18</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Cauchy_stress_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="19" />
+        <Attribute Name="Cauchy_stress_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Cauchy_stress_DG/19</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Green_Lagrange_strain_CG" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/0</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/1</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/2</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/3</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/4</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/5</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/6</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/7</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/8</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/9</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="10" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/10</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="11" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/11</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="12" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/12</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="13" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/13</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="14" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/14</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="15" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/15</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="16" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/16</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="17" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/17</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="18" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/18</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_CG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="19" />
+        <Attribute Name="Green_Lagrange_strain_CG" AttributeType="Tensor" Center="Node">
+          <DataItem Dimensions="525 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_CG/19</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="Green_Lagrange_strain_DG" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="0" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/0</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/1</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/2</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/3</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/4</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/5</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/6</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/7</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/8</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/9</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="10" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/10</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="11" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/11</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="12" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/12</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="13" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/13</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="14" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/14</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="15" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/15</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="16" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/16</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="17" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/17</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="18" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/18</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="Green_Lagrange_strain_DG" GridType="Uniform">
+        <xi:include xpointer="xpointer(/Xdmf/Domain/Grid[@GridType='Uniform'][1]/*[self::Topology or self::Geometry])" />
+        <Time Value="19" />
+        <Attribute Name="Green_Lagrange_strain_DG" AttributeType="Tensor" Center="Cell">
+          <DataItem Dimensions="320 9" Format="HDF">results_hyperelastic.h5:/Function/Green_Lagrange_strain_DG/19</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>
